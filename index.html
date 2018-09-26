@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+</head>
+
+<style>
+body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 470px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #d41a1a;
+}
+
+.container{padding: 30 px;}
+
+</style>
+
+<body>
+<ul>
+    <li><a class="active"href="index.html">Home</a></li>
+    <li><a href="werkervaring.html">Werkervaring</a></li>
+    <li><a href="beroepsproducten.html">Beroepsproducten</a></li>
+    <li><a href="opdrachten.html">Opdrachten (Professioneel handelen)</a></li>
+    <li><a href="reflecties.html">Reflecties</a></li>
+    <li style="float:right"><a href="contact.html">Contact</a></li>
+</ul>
+
+<h1>Welkom op mijn website!</h1>
+
+<div class="row">
+    <div class="column">
+         <p>Hieronder zal je al heel wat informatie over mij te weten kunnen komen maar ik zal nog even kort wat vertellen over mijn hobby’s. Zo mag ik graag in mijn vrije tijd even sporten, ik speel bijvoorbeeld al sinds ik 8 jaar oud ben voetbal bij voetbal verenging Irnsum. Naast het sporten mag ik ook graag met een paar vrienden even een biertje drinken naar het voetbal of in het weekend. Vaak gaan we dan achteraf ook nog even met zijn allen opstap.</p>
+    </div>
+    <div class="column">
+            <img src="images/teamfoto.png" alt="teamfoto" align="right">
+    </div>
+</div>
+
+<div class="container">
+    <embed src="cv.pdf#toolbar=0" type="application/pdf" width="100%" height="1140px" />
+</div>
+
+</body>
+</html>
+

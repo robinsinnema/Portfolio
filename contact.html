@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+</head>
+
+<style>
+        body {
+            font: 15px/1.5 Arial, Helvetica,sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+            border-right:1px solid #bbb;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #d41a1a;
+        }
+        
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.verzenden {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    width: 90px;
+}
+
+.verzenden:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=verzenden] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+</style>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="werkervaring.html">Werkervaring</a></li>
+    <li><a href="beroepsproducten.html">Beroepsproducten</a></li>
+    <li><a href="opdrachten.html">Opdrachten (Professioneel handelen)</a></li>
+    <li><a href="reflecties.html">Reflecties</a></li>
+    <li style="float:right"><a class="active"href="contact.html">Contact</a></li>
+</ul>
+
+
+<body>
+
+        <h2>Contact formulier</h2>
+        
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="naam">Volledige naam</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="naam" name="naam" placeholder="Je naam..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Je e-mail adres..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Onderwerp</label>
+              </div>
+              <div class="col-75">
+                <select id="onderwerp" name="onderwerp">
+                  <option value="hobby's">Hobby's</option>
+                  <option value="werk">Werk</option>
+                  <option value="info">Info</option>
+                  <option value="opleiding">Opleiding</option>
+                  <option value="overig">Overig</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="vraag">Vraag</label>
+              </div>
+              <div class="col-75">
+                <textarea id="vraag" name="" placeholder="Schrijf iets.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="button" class="verzenden" value="Verzenden">
+            </div>
+          </form>
+        </div>
+
+</body>
+</html>
+
+
